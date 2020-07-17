@@ -1,18 +1,19 @@
-// 	1: feetToMile
+// 	Problem No : 1 - feetToMile
 
 function feetToMile(feet) {
 
     if(feet >= 0) {
         var mile = feet / 5280;
-        return mile;
+        return mile.toFixed(2);
     }
     else {
-        console.log("Error420: Physical quantities can never be negative.")
+        console.log("Error: Physical quantities can never be negative.")
     }
 
 }
 
-// 2: woodCalculator
+
+// Problem No : 2 - woodCalculator
 
 function woodCalculator(chair, table, bed) {
 
@@ -24,12 +25,13 @@ function woodCalculator(chair, table, bed) {
         return totalWoodCount;
     }
     else {
-        console.log("Error420: Physical quantities can never be negative.")
+        console.log("Error: Physical quantities can never be negative.")
     }
 
 }
 
-// 	3: brickCalculator
+
+// 	Problem No : 3 - brickCalculator
 
 function brickCalculator(floorCount) {
 
@@ -46,23 +48,27 @@ function brickCalculator(floorCount) {
             floorLength = (bricksPerFloor * 10) + 70000;
         }
         else {
-            console.log('Error420: Physical quantities can never be negative.')
+            console.log('Error: Physical quantities can never be negative.')
         }
         return floorLength;
         
 }
 
-// 	4: tinyFriend Undone
+
+// 	Problem No : 4 - tinyFriend
 
 function tinyFriend(friendsName) {
 
-    let 
+    var tinyName = friendsName[0];
+    
+    for(var i = 0; i < friendsName.length; i++) {
+
+        var newName = friendsName[i];
+
+        if(newName.length < tinyName.length) {
+            tinyName = newName;
+        }
+    }
+    return tinyName; 
 
 }
-
-
-
-
-
-// // var result = tinyFriend(['Sabber', 'Rhea', 'Amrin', 'Bushra', 'Mridul', 'Mahin']);
-// // console.log(result)
